@@ -1,10 +1,10 @@
-import "./App.css";
-import Nav from "./components/Nav/Nav";
+import { RouterProvider } from "react-router-dom";
+import router from "./components/router/router";
 
 function App() {
   return (
     <div>
-      <Nav></Nav>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }

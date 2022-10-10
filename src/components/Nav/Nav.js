@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function NavBar() {
+function Nav() {
   const [navbar, setNavbar] = useState(false);
 
   return (
@@ -75,3 +75,5 @@ export default function NavBar() {
     </nav>
   );
 }
+
+export default Nav;
