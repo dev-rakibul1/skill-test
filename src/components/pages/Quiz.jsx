@@ -5,12 +5,8 @@ const Quiz = ({ info }) => {
   const { id, name, logo } = info;
   return (
     <>
-      <div className="max-w-xs p-6 rounded-md border dark:bg-gray-900 dark:text-gray-50">
-        <img
-          src={logo}
-          alt="logo"
-          className="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500 bg-green-200"
-        />
+      <div className="max-w-full p-6 rounded-md border dark:bg-gray-900 dark:text-gray-50">
+        <img src={logo} alt="logo" className="w-full bg-green-100" />
         <div className="mt-6 mb-2">
           <span className="block text-xs tracking-widest uppercase dark:text-violet-400 font-light">
             Topic

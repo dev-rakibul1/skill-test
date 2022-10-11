@@ -5,7 +5,7 @@ import QuizBox from "./QuizBox";
 const SingleQuiz = () => {
   const single = useLoaderData();
   const singleData = single.data;
-  console.log(singleData);
+  //   console.log(singleData);
   return (
     <div>
       <QuizBox singleData={singleData} />

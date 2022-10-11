@@ -61,13 +61,10 @@ function Nav() {
                 <Link to="/home">Home</Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
+                <Link to="/statistics">Statistics</Link>
+              </li>
+              <li className="text-gray-600 hover:text-blue-600">
                 <Link to="/blog">Blog</Link>
-              </li>
-              <li className="text-gray-600 hover:text-blue-600">
-                <Link to="javascript:void(0)">About US</Link>
-              </li>
-              <li className="text-gray-600 hover:text-blue-600">
-                <Link to="javascript:void(0)">Contact US</Link>
               </li>
             </ul>
           </div>

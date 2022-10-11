@@ -32,7 +32,7 @@ const Home = () => {
       </div>
 
       {/* quiz section */}
-      <div className="md:w-[90%] mx-auto px-3 mt-10 grid grid-cols-4 gap-7">
+      <div className="md:w-[90%] mx-auto px-3 mt-10 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
         {quizData.map((info) => (
           <Quiz info={info} key={info.id} />
         ))}
