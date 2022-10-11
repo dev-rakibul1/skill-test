@@ -1,4 +1,4 @@
-import { faCocktail } from "@fortawesome/free-solid-svg-icons";
+import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
@@ -36,7 +36,7 @@ const QuizItem = ({ items }) => {
             className="w-[5%] cursor-pointer"
             onClick={onclickCorrectAnswerHandler}
           >
-            <FontAwesomeIcon icon={faCocktail} />
+            <FontAwesomeIcon icon={faEye} />
           </span>
         </div>
         <ul className=" p-2">
@@ -44,7 +44,7 @@ const QuizItem = ({ items }) => {
             <input
               type="radio"
               id=""
-              name="choice"
+              name={options[0]}
               value={options[0]}
               onChange={onCLickHandler}
             />
@@ -54,7 +54,7 @@ const QuizItem = ({ items }) => {
             <input
               type="radio"
               id=""
-              name="choice"
+              name={options[0]}
               value={options[1]}
               onChange={onCLickHandler}
             />
@@ -64,7 +64,7 @@ const QuizItem = ({ items }) => {
             <input
               type="radio"
               id=""
-              name="choice"
+              name={options[0]}
               value={options[2]}
               onChange={onCLickHandler}
             />
@@ -74,7 +74,7 @@ const QuizItem = ({ items }) => {
             <input
               type="radio"
               id=""
-              name="choice"
+              name={options[0]}
               value={options[3]}
               onChange={onCLickHandler}
             />
