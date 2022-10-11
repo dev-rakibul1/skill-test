@@ -9,7 +9,7 @@ function Nav() {
       <div className=" w[90%] justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="javascript:void(0)">
+            <Link to="/">
               <h2 className="text-2xl font-normal">Skills test</h2>
             </Link>
             <div className="md:hidden">
