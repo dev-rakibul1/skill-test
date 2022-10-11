@@ -2,12 +2,12 @@ import { faCocktail } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useContext } from "react";
 import { QuizContext } from "../../root/Root";
-import heroImages from "../images/hero_2.jpg";
+import heroImages from "../images/hero_1.jpg";
 import Quiz from "./Quiz";
 
 const Home = () => {
   const quizData = useContext(QuizContext);
-  console.log(quizData);
+  // console.log(quizData);
   return (
     <>
       <div className="md:w-[90%] mx-auto px-3 grid sm:grid-cols-1 sm:py-2 md:my-2 md:grid-cols-2 py-28">
@@ -34,7 +34,7 @@ const Home = () => {
       {/* quiz section */}
       <div className="md:w-[90%] mx-auto px-3 mt-10 grid grid-cols-4 gap-7">
         {quizData.map((info) => (
-          <Quiz info={info} />
+          <Quiz info={info} key={info.id} />
         ))}
       </div>
     </>
