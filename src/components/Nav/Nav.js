@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
   const [navbar, setNavbar] = useState(false);
@@ -9,9 +9,12 @@ function Nav() {
       <div className=" w[90%] justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link className="text-white" to="/">
+            <NavLink
+              className="text-white text-xl border-b-2 border-transparent"
+              to="/"
+            >
               <h2 className="text-2xl font-normal text-white">Skills test</h2>
-            </Link>
+            </NavLink>
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -58,19 +61,28 @@ function Nav() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-600 hover:text-blue-600">
-                <Link className="text-white" to="/home">
+                <NavLink
+                  className="text-white text-xl border-b-2 border-transparent"
+                  to="/home"
+                >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <Link className="text-white" to="/statistics">
+                <NavLink
+                  className="text-white text-xl border-b-2 border-transparent"
+                  to="/statistics"
+                >
                   Statistics
-                </Link>
+                </NavLink>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <Link className="text-white" to="/blog">
+                <NavLink
+                  className="text-white text-xl border-b-2 border-transparent"
+                  to="/blog"
+                >
                   Blog
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>

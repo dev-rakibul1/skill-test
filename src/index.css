@@ -7,6 +7,10 @@
   font-family: "Oswald", sans-serif;
   font-weight: 200;
 }
+.active {
+  color: rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
 
 body {
   margin: 0;
