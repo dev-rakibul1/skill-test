@@ -5,15 +5,17 @@ function Nav() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-lime-700 shadow">
+    <nav className="w-full bg-rose-100 shadow">
       <div className=" w[90%] justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <NavLink
-              className="text-white text-xl border-b-2 border-transparent"
+              className="text-green-600 text-xl border-b-2 border-transparent"
               to="/"
             >
-              <h2 className="text-2xl font-normal text-white">Skills test</h2>
+              <h2 className="text-2xl font-normal text-green-600">
+                Skills test
+              </h2>
             </NavLink>
             <div className="md:hidden">
               <button
@@ -62,7 +64,7 @@ function Nav() {
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-600 hover:text-blue-600">
                 <NavLink
-                  className="text-white text-xl border-b-2 border-transparent"
+                  className="text-green-600 text-xl border-b-2 border-transparent"
                   to="/home"
                 >
                   Home
@@ -70,7 +72,7 @@ function Nav() {
               </li>
               <li className="text-gray-600 hover:text-blue-600">
                 <NavLink
-                  className="text-white text-xl border-b-2 border-transparent"
+                  className="text-green-600 text-xl border-b-2 border-transparent"
                   to="/statistics"
                 >
                   Statistics
@@ -78,7 +80,7 @@ function Nav() {
               </li>
               <li className="text-gray-600 hover:text-blue-600">
                 <NavLink
-                  className="text-white text-xl border-b-2 border-transparent"
+                  className="text-green-600 text-xl border-b-2 border-transparent"
                   to="/blog"
                 >
                   Blog

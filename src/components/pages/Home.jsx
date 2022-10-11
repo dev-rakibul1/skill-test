@@ -14,7 +14,7 @@ const Home = () => {
         <div className="text-center">
           <article className="hero-info flex flex-col items-center justify-center h-full">
             <FontAwesomeIcon icon={faCocktail} className="text-7xl" />
-            <h1 className="sm:text-5xl text-xl uppercase py-4 text-lime-700">
+            <h1 className="sm:text-5xl text-xl uppercase py-4 text-green-600">
               Conquer the test
             </h1>
             <p className="tracking-[5px]	sm:text-xl ">Winner upto 90%</p>
