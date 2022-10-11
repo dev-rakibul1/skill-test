@@ -5,12 +5,12 @@ function Nav() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-green-200 shadow">
+    <nav className="w-full bg-lime-700 shadow">
       <div className=" w[90%] justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="/">
-              <h2 className="text-2xl font-normal">Skills test</h2>
+            <Link className="text-white" to="/">
+              <h2 className="text-2xl font-normal text-white">Skills test</h2>
             </Link>
             <div className="md:hidden">
               <button
@@ -58,13 +58,19 @@ function Nav() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="text-gray-600 hover:text-blue-600">
-                <Link to="/home">Home</Link>
+                <Link className="text-white" to="/home">
+                  Home
+                </Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <Link to="/statistics">Statistics</Link>
+                <Link className="text-white" to="/statistics">
+                  Statistics
+                </Link>
               </li>
               <li className="text-gray-600 hover:text-blue-600">
-                <Link to="/blog">Blog</Link>
+                <Link className="text-white" to="/blog">
+                  Blog
+                </Link>
               </li>
             </ul>
           </div>

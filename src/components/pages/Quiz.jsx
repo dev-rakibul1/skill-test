@@ -7,7 +7,7 @@ const Quiz = ({ info }) => {
   return (
     <>
       <div className="max-w-full p-6 rounded-md border dark:bg-gray-900 dark:text-gray-50">
-        <img src={logo} alt="logo" className="w-full bg-green-100" />
+        <img src={logo} alt="logo" className="w-full bg-lime-700 rounded-md" />
         <div className="mt-6 mb-0">
           <span className="block text-xs tracking-widest uppercase dark:text-violet-400 font-light">
             Topic
