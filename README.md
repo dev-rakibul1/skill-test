@@ -1,3 +1,13 @@
+# My project simple descriptions
+
+### Project name is: Skills test
+
+### Project url: [Skills test](https://heartfelt-macaron-cca454.netlify.app/)
+
+## Descriptions
+
+### This is a react components based single pages static application. The website use for skill test purpose. There have simple logic and very simple website and have one navigation bar, some pages, use react router, like context API, like useReactError and so on. This website use tailwind css framework and fully pixel perfectly responsive layout, most interesting toastify plugin use in the website.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +78,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # b6-quiz-crackerz-dev-rakibul1
