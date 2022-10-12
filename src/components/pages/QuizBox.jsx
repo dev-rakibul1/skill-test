@@ -1,33 +1,41 @@
 import React from "react";
+import { toast } from "react-toastify";
 import QuizItem from "./QuizItem";
-import Sidebar from "./Sidebar";
 
 const QuizBox = ({ singleData }) => {
-  const { name } = singleData;
-  const quizQuestion = singleData.questions;
-  //   console.log(quizQuestion);
+  const { correctAnswer } = singleData;
+  // const includeData = singleData.questions;
+  // const [quiz, setQuiz] = useState([singleData]);
 
-  const onCLickHandler = (ans) => {
-    console.log("click", ans);
+  // console.log(singleData);
+
+  // const [quiz, setQuiz] = useState([]);
+  // const [selected, setSelected] = useState([]);
+  let truthy = [];
+  let falsy = [];
+
+  const onCLickHandler = (ans, user) => {
+    console.log(truthy);
+    console.log(falsy);
+    const userAnswer = user;
+
+    if (correctAnswer === userAnswer) {
+      toast.success("Wow correct answer", { autoClose: 1500 });
+    } else {
+      toast.error("Incorrect answer", { autoClose: 1500 });
+    }
   };
 
   return (
-    <div className="md:w-[90%] mx-auto md:flex gap-4 px-2">
-      <div className="md:w-[80%] px-4 mt-10 grow-[9]">
-        <h1 className="font-bold text-2xl text-center">Quiz of {name}</h1>
+    // <>
 
-        {quizQuestion.map((items) => (
-          <QuizItem
-            key={items.id}
-            items={items}
-            onCLickHandler={onCLickHandler}
-          />
-        ))}
-      </div>
+    // {console.log("hi")}
+    // </>
+    <div className="w-full px-2">
+      <div className="w-full px-4">
+        {/* <h1 className="font-bold text-2xl text-center">Quiz of {name}</h1> */}
 
-      {/* sidebar */}
-      <div className="md:w-[20%] grow-[3]">
-        <Sidebar />
+        <QuizItem items={singleData} onCLickHandler={onCLickHandler} />
       </div>
     </div>
   );

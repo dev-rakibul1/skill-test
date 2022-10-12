@@ -1,25 +1,28 @@
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React from "react";
 import { toast } from "react-toastify";
 
-const QuizItem = ({ items }) => {
+const QuizItem = ({ items, onCLickHandler }) => {
   const { correctAnswer, id, question, options } = items;
   //   console.log(items);
 
-  const [selected, setSelected] = useState([]);
-  console.log(selected);
-  const onCLickHandler = (event) => {
-    const correct = correctAnswer;
-    const userAnswer = event.target.value;
+  // console.log(selected);
+  // const onCLickHandler = (event) => {
+  //   const correct = correctAnswer;
+  //   const userAnswer = event.target.value;
+  //   correct === userAnswer ? truthy.push(correct) : falsy.push(userAnswer);
 
-    if (correct === userAnswer) {
-      toast.success("Wow correct answer", { autoClose: 1500 });
-      setSelected(userAnswer);
-    } else {
-      toast.error("Incorrect answer", { autoClose: 1500 });
-    }
-  };
+  //   console.log("true", truthy);
+  //   console.log("false", falsy);
+
+  //   if (correct === userAnswer) {
+  //     toast.success("Wow correct answer", { autoClose: 1500 });
+  //     // setSelected(userAnswer);
+  //   } else {
+  //     toast.error("Incorrect answer", { autoClose: 1500 });
+  //   }
+  // };
 
   const onclickCorrectAnswerHandler = () => {
     toast.info(`Correct ans: ${correctAnswer}`, { autoClose: 3500 });
@@ -46,7 +49,7 @@ const QuizItem = ({ items }) => {
               id=""
               name={options[0]}
               value={options[0]}
-              onChange={onCLickHandler}
+              onChange={() => onCLickHandler(items, options[0])}
             />
             1. {options[0]}
           </li>
@@ -56,7 +59,7 @@ const QuizItem = ({ items }) => {
               id=""
               name={options[0]}
               value={options[1]}
-              onChange={onCLickHandler}
+              onChange={() => onCLickHandler(items, options[1])}
             />
             2. {options[1]}
           </li>
@@ -66,7 +69,7 @@ const QuizItem = ({ items }) => {
               id=""
               name={options[0]}
               value={options[2]}
-              onChange={onCLickHandler}
+              onChange={() => onCLickHandler(items, options[2])}
             />
             3. {options[2]}
           </li>
@@ -76,7 +79,7 @@ const QuizItem = ({ items }) => {
               id=""
               name={options[0]}
               value={options[3]}
-              onChange={onCLickHandler}
+              onChange={() => onCLickHandler(items, options[3])}
             />
             4. {options[3]}
           </li>
